@@ -4,70 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sushi Restaurant Menue</title>
-<style>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-p {
-  border: 3px solid black;
-  background-color: grey;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: black;
-}
-p.title {
-	position: relative;
-	border: 1px solid black;
-	background-color: red;
-	left: 150;
-}
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-/********** Large devices only **********/
-/*
-@media (min-width: 992px) {
- .col-lg-4 {
-    float: left;
-  }
- .col-lg-4 {
-    width: 33.33%;
-  }
-*/
-/********** Medium devices only **********/
-/*
-@media (min-width: 768px) and (max-width: 991px) {
-   .col-md-4 {
-    float: left;
-  }
-   .col-md-4 {
-    width: 33.33%;
-  }
- */
-
-</style>
 </head>
 <body>
 <h1>Our Menue</h1>
 
-<div class="row">
 
-  <div class="col-lg-4 col-md-4"> <div><p class="title">Chicken</p></div> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium</p></div>
-  <div class="col-lg-4 col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium</p></div>
-  <div class="col-lg-4 col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium</p></div>
-</div>
+  <div class="col-lg-4 col-md-6">
+    <p class="text"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium <p id="p1">Chicken</p>
+    </p>
+  </div>
+
+  <div class="col-lg-4 col-md-6">
+    <p id="p2">Beef</p>
+    <p class="text"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium
+    </p>
+  </div>
+
+  <div class="col-lg-4 col-md-12">
+    <p id="p3">Sushi</p>
+    <p class="text"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium
+    </p>
+  </div>
 
 </body>
 </html>
