@@ -1,93 +1,165 @@
-* {
-  box-sizing: border-box;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
 }
 
-h1 {
-  margin-bottom: 15px;
+/** HEADER **/
+#header-nav {
+  background-color: #008080;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #b8860b;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  width: 100%;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.container {
+width: 100%;
+margin: auto;
+}
+
+#nav-list {
+  margin-top: 0;
+}
+
+#nav-list span {
+  color: #b8860b;
+  /*border: 1px solid;*/
+  border-color: #ffffff;
   text-align: center;
+  width: 100%;
+  font-size: 1.8em;
 }
 
-div.col-lg-4 {
-  position: relative;
-}
-
-p.text {
-  /*position: relative;*/
-  border: 3px solid black;
-  background-color: grey;
-  color: black;
+#nav-list hr {
   width: 90%;
-  height: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica; 
-  padding: 10px;
 }
 
-#p1 {
-  z-index: 2;
-	position: absolute;
+#nav-list li:nth-child(3) {
+  border-bottom: 2px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #b8860b;
+}
+.navbar-header button.navbar-toggle {
+  margin-top: 15px;
+}
+/* END HEADER */
+
+/*HOME PAGE*/
+#main-content {
+    background-color: #ffffff;
+}
+
+#main-page-title {
+  color:  #b8860b;
+  font-weight: bold;
+  font-size: 2em;
   text-align: center;
-  top: 0px;
-  right: 24px;
-	border: 1px solid black;
-  width: 100px;
-  height: 30px;
-	background-color: red;
-  padding: 4px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+}
+#main-page {
+  background-color: #008080;
+  font-weight: bold;
+  color:  #ffffff;
 }
 
-#p2 {
-  z-index: 2;
-  position: absolute;
+#main-page a {
+  color: #b8860b;
+}
+
+#text-title {
+  margin-top: 10px;
+  width: 100%;
   text-align: center;
-  top: 0px;
-  right: 24px;
-  border: 1px solid black;
-  width: 100px;
-  height: 30px;
-  background-color: #05AA6F;
-  padding: 4px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-#p3 {
-  z-index: 2;
-  position: absolute;
-  text-align: center;
-  top: 0px;
-  right: 24px;
-  border: 1px solid black;
-  width: 100px;
-  height: 30px;
-  background-color: #12BBAA;
-  padding: 4px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-/* Simple Responsive Framework. */
+/*MEDIA QUERY SECTION*/
 
 /********** Large devices only **********/
-
-@media (min-width: 992px) {
- .col-lg-4 {
-    float: left;
-    width: 33.33%;
-  }
+@media (min-width: 1200px) {
 }
 
 /********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
 
+/********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-   .col-md-6 {
-    float: left;
-    width: 50%;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
   }
-   .col-md-12 {
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a i { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+}
+
+/********** Super Extra small devices only (Iphone4)**********/
+@media (max-width: 479px) {
+  
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
     float: left;
     width: 100%;
   }
