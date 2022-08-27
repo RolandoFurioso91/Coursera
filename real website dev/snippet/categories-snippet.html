@@ -1,0 +1,12 @@
+<!--this used json is an array of objcets (this array of objects is inside a heroku web app in order to avoi CORS issues.
+each object has a name, a short-name and other assigned variables. so when i recall "short-name" below, i'm retrieve info
+from that array-->
+<!--double curly brakets inside '' gives back the property name of the object in the array-->
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('{{short_name}}');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/{{short_name}}/{{short_name}}.jpg" alt="{{name}}">
+      <span>{{name}}</span>
+    </div>
+  </a>
+</div>
